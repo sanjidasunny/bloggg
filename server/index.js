@@ -10,7 +10,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: "https://bloggg-neon.vercel.app/", 
+  origin: "https://bloggg-git-main-sanjidas-projects-c5c31e10.vercel.app/", 
   methods: ["POST", "GET"], 
   credentials: true 
 }));
