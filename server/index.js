@@ -10,11 +10,12 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ["https://blog-front-bay.vercel.app", "https://bloggg-8qfgf1bdy-sanjidas-projects-c5c31e10.vercel.app"], 
-  methods: ["POST", "GET"], 
-  credentials: true 
+  origin: "https://blog-front-bay.vercel.app", // Replace with your actual frontend URL
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  credentials: true
 }));
 
+// Handle preflight requests
 app.options('*', cors());
 
 app.use(bodyParser.json());
