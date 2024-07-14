@@ -10,7 +10,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: "https://backend-kappa-liart.vercel.app/", // Replace with your actual frontend URL
+  origin: "https://bloggg-neon.vercel.app", // Replace with your actual frontend URL
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   credentials: true
 }));
