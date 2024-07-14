@@ -100,7 +100,7 @@ const Login = ({ isUserAuthenticated }) => {
             if (response.isSuccess) {
                 showError('');
 
-                ssessionStorage.setItem('accessToken', `Bearer ${response.data.accessToken}`);
+                sessionStorage.setItem('accessToken', `Bearer ${response.data.accessToken}`);
                 sessionStorage.setItem('refreshToken', `Bearer ${response.data.refreshToken}`);
                 setAccount({ name: response.data.name, username: response.data.username });
 
